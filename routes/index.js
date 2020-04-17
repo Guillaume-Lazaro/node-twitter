@@ -6,7 +6,10 @@ const tweets = require('./tweets');   //recupére tweets.js
 const Tweet = require("../database/models/tweet.model");
 
 //Routeur
-router.use('/tweets', tweets)             //
+router.use('/tweets', tweets);
+router.get('/', (req,res) => {
+    res.redirect('./tweets');
+});
 // router.get('/', (req,res) => {
 //     res.render("home");
 // });
