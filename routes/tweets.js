@@ -13,3 +13,5 @@ router.post('/', (req, res) => {
         res.status(400).render('tweets/tweet-form', {errors});
     })
 });
+
+module.exports = router;
