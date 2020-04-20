@@ -8,6 +8,7 @@ const Tweet = require("../database/models/tweet.model");
 //Routeur
 router.use('/tweets', tweets);
 router.get('/', (req,res) => {
+    console.log("get");
     res.redirect('./tweets');
 });
 // router.get('/', (req,res) => {

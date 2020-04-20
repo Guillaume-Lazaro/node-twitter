@@ -10,6 +10,6 @@ const tweetSchema = schema({
     },
 });
 
-const Tweet = mongoose.model('tweetSchema', tweetSchema);      //Transforme le schema de données en Modéle
+const Tweet = mongoose.model('tweets', tweetSchema);      //Transforme le schema de données en Modéle, 1er params:collection
 
 module.exports = Tweet;
